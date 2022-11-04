@@ -1,0 +1,12 @@
+.box{
+    float:right;
+    height: 50vh;
+    width: 50vw;
+    min-width: 500px;
+    min-height: 500px;
+    text-align: right;
+    background-color: aqua;
+    padding:20px;
+    margin: 50px;
+    clear:left;
+}
