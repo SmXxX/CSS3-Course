@@ -25,7 +25,8 @@
 }
 .border-four-box{
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 5fr 5fr;
+    position: absolute;
 }
 .border-content-box5{
     width: 200px;
@@ -33,6 +34,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
     border:thick solid black;
+
 }
 .border-content-box6{
     width: 200px;
