@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  display:flex ;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  color: hsl(198, 1%, 29%);
+  font-family: 'Gochi Hand', cursive;
+  text-align: left;
+  font-size: 35px;
+  width: 100vw;
+  height: 100vh;
+}
+div{
+    width:350px;
+    height:350px;
+}
+.box-content{
+    position: relative;
+    padding:20px;
+}
+.box-content:hover h6{
+  display: inline;
+  height: auto;
+  background-image: linear-gradient(
+        transparent 70%,
+        #e1fffe 50%,
+        #b0f8ff 85%,
+        transparent 85%,
+        transparent 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s forwards;
+}
+.box-content::before,
+.box-content::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 2px #fff;
+    animation: clipMe 3s linear infinite;
+}
+.box-content::before{
+    animation-delay: -1.5s;
+}
+@keyframes clipMe{
+    0%,100%{clip:rect(0,350px,2px,0);}
+    25%{clip:rect(0,2px,350px,0);}
+    50%{clip:rect(348px,350px,350px,0);}
+    75%{clip:rect(0,350px,350px,348px);}
+}
+@keyframes animatedBackground {
+    to {
+        background-size: 100% 100%;  
+    }
+}
