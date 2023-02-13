@@ -1,0 +1,46 @@
+body{
+    background-color: #504f4f;
+    margin-top: 150px;
+}
+.container{
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: rgb(202, 241, 239);
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px 3px rgb(54, 54, 54);
+}
+form{
+    display: inline-block;
+}
+input{
+    padding: 4px 15px 4px 5px;
+}
+ul{
+    padding-left: 20px;
+    font-weight: bolder;
+}
+ul li:nth-child(even){
+    background-color: grey;
+    color: #fff;
+    font-weight: bolder;
+}
+#button{
+    display: inline-block;
+    background-color: #0f12dd;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+#button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+li:hover{
+    cursor: pointer;
+}
+.strike{
+    text-decoration: line-through;
+}
